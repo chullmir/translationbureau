@@ -1,7 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
-	font-family: 'Open Sans', sans-serif;
+	/*margin-top: 300px;*/
+	/*font-family: 'Open Sans', sans-serif;*/
 }
 header{
-	padding: 20px;
+	/*padding: 20px;*/
+	font-family: 'Poppins';
 	background-color: #c2c2c2;
+	/*position: fixed;*/
+	width: 100%;
+}
+header nav{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+header nav .logo{
+	/*background: blue;*/
+	padding: 30px;
+}
+header nav .button{
+	display: flex;
+	align-items: center;
+	/*background: DodgerBlue;*/
+	font-size: 2em;
+}
+header nav .button a{
+	padding: 30px;
+	color: #fff;
+}
+header nav .menu{
+	display: none;
+	background: red;
+}
+.navbar{
+	justify-content: left;
+}
+header nav .menu .navbar li{
+	list-style: none;
+	margin-right: 15px;
+}
+header nav .menu .navbar li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	margin-right: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 2px solid #c2c2c2;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #fff;
+	border-bottom: 2px solid green;	
+}
+
+#hero{
+	background: url('../img/hero-bg.jpg');
+	background-size: contain;
+}
+#hero .hero-text{
+	font-family: "Poppins";
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#hero h1{
+	margin-top: 250px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+#hero h2{
+	margin-bottom: 250px;
+}
+#spacer{
+	background: #1BAC91;
+}
+#spacer .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#spacer .quote{
+	/*background:orange;*/
+	flex-direction: column;
+}
+#spacer .cita{
+	color: #fff;
+	font-family: "Open Sans";
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.1em;
+	text-align: right;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+#spacer .cita i{
+	color: #99D3C8;
+	font-size: 68px;
+	margin-right: 15px;
+}
+#spacer .autor-cita{
+	color: #555;
+	font-size: 18px;
+	text-align: right;
+}
+#spacer .icono{
+	color: #fff;
+	font-size: 140px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#acerca{
+	background: purple;
 }
