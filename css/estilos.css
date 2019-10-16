@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	/*margin-top: 300px;*/
@@ -85,10 +86,7 @@ header nav .menu .navbar li a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-#spacer .quote{
-	/*background:orange;*/
-	flex-direction: column;
+	flex-direction: row;
 }
 #spacer .cita{
 	color: #fff;
@@ -118,4 +116,29 @@ header nav .menu .navbar li a{
 }
 #acerca{
 	background: purple;
+}
+#servicios{
+	background: maroon;
+}
+#servicios .item-servicio{
+	background: #c2c2c2;
+	margin-bottom: 25px;
+	margin-right: 1px;
+}
+#servicio .container .row{
+	padding: 0;
+}
+#servicios .item-servicio article{
+	/*background: blue;*/
+}
+@media screen and (min-width: 770px){
+	#spacer .container{
+		/*background: orange;*/
+		flex-wrap: nowrap;
+	}
+	#spacer .container .icono{
+		align-self: center;
+		margin-left: 40px;
+		margin-top: 60px;
+	}
 }
