@@ -79,16 +79,16 @@ header nav .menu .navbar li a{
 #hero h2{
 	margin-bottom: 250px;
 }
-#spacer{
+#spacer, #otherQuotation{
 	background: #1BAC91;
 }
-#spacer .container{
+#spacer .container, #otherQuotation .container{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
 }
-#spacer .cita{
+#spacer .cita, #otherQuotation .cita{
 	color: #fff;
 	font-family: "Open Sans";
 	font-size: 36px;
@@ -96,7 +96,7 @@ header nav .menu .navbar li a{
 	line-height: 1.1em;
 	text-align: right;
 	margin-top: 60px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 #spacer .cita i{
 	color: #99D3C8;
@@ -107,30 +107,91 @@ header nav .menu .navbar li a{
 	color: #555;
 	font-size: 18px;
 	text-align: right;
+	margin-bottom: 60px;
 }
 #spacer .icono{
 	color: #fff;
 	font-size: 140px;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 #acerca{
 	background: purple;
 }
-#servicios{
-	background: maroon;
+
+#servicios .header, #areas .header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
 }
-#servicios .item-servicio{
-	background: #c2c2c2;
+#servicios .sectionTitle, #areas .sectionTitle{
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 48px;
+	font-weight: bold;
+	color: #111111;
+	margin-top: 45px;
+
+}
+#servicios .header .divider-header, #areas .header .divider-header{
+	width: 40px;
+	height: 2px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: #666;
+}
+#servicios .sectionSubtitle, #areas .sectionSubtitle{
+	font-family: 'Lato', sans-serif;
+	color: #444444;
+	font-size: 20px;
+}
+#servicios .item-servicio, #areas .item-area{
+	/*background: #fff;*/
 	margin-bottom: 25px;
-	margin-right: 1px;
 }
-#servicio .container .row{
-	padding: 0;
+#servicios .item-servicio article, #areas .item-area article{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	background: #F9F9F9;
+	padding: 40px 25px;
+
 }
-#servicios .item-servicio article{
-	/*background: blue;*/
+#servicios .item-servicio article i{
+	font-size: 5em;
+	margin-bottom: 35px;
+	color: #666666;
 }
+#servicios .item-servicio article h4, #areas .item-servicio article h4{
+	margin-bottom: 35px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+#servicios .item-servicio article p, #areas .item-area article p{
+	text-align: center;
+	color: #666;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+#contacto .container .datos{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+#contacto .container .datos article{
+	display: flex;
+}
+#contacto .container .datos article .text{
+	text-transform: uppercase;
+	margin-right: 15px;
+	width: 30%;
+}
+
+
 @media screen and (min-width: 770px){
 	#spacer .container{
 		/*background: orange;*/
