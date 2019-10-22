@@ -20,17 +20,20 @@ header nav{
 	flex-wrap: wrap;
 }
 header nav .logo{
-	/*background: blue;*/
 	padding: 30px;
+	width: 50%;
 }
 header nav .button{
 	display: flex;
+	flex-direction: row-reverse;
 	align-items: center;
 	/*background: DodgerBlue;*/
 	font-size: 2em;
+	width: 50%;
 }
-header nav .button a{
-	padding: 30px;
+header nav .button i{
+	padding: 15px;
+	font-size: 30px;
 	color: #fff;
 }
 header nav .menu{
@@ -40,11 +43,15 @@ header nav .menu{
 .navbar{
 	justify-content: left;
 }
-header nav .menu .navbar li{
+header nav .navbar{
+	display: flex;
+	flex-direction: column;
+}
+header nav .navbar li{
 	list-style: none;
 	margin-right: 15px;
 }
-header nav .menu .navbar li a{
+header nav .navbar li a{
 	text-transform: uppercase;
 	color: #fff;
 }
