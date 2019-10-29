@@ -18,10 +18,11 @@ header nav{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	/*background: blue;*/
 }
 header nav .logo{
 	padding: 30px;
-	width: 50%;
+	width: 25%;
 }
 header nav .button{
 	display: flex;
@@ -29,23 +30,25 @@ header nav .button{
 	align-items: center;
 	/*background: DodgerBlue;*/
 	font-size: 2em;
-	width: 50%;
+	width: 75%;
 }
 header nav .button i{
 	padding: 15px;
 	font-size: 30px;
 	color: #fff;
 }
+
 header nav .menu{
-	display: none;
-	background: red;
+	width: 100%;
+	/*background: red;*/
 }
-.navbar{
-	justify-content: left;
-}
+
 header nav .navbar{
 	display: flex;
 	flex-direction: column;
+}
+header nav #largeNavbar{
+	display: none;
 }
 header nav .navbar li{
 	list-style: none;
@@ -156,9 +159,20 @@ header nav .navbar li a{
 	font-size: 20px;
 }
 #servicios .item-servicio, #areas .item-area{
-	/*background: #fff;*/
 	margin-bottom: 25px;
 }
+#servicios .accordion .card{
+	border: none;
+}
+#servicios .accordion .card .card-header{
+	background: none;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 0;
+}
+
 #servicios .item-servicio article, #areas .item-area article{
 	display: flex;
 	flex-wrap: wrap;
@@ -170,13 +184,39 @@ header nav .navbar li a{
 }
 #servicios .item-servicio article i{
 	font-size: 5em;
-	margin-bottom: 35px;
+	margin: 35px auto;
 	color: #666666;
 }
 #servicios .item-servicio article h4, #areas .item-servicio article h4{
-	margin-bottom: 35px;
+	/*margin-bottom: 35px;*/
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
+	color: #212529;
+	margin: 0;
+	text-decoration: none;
+}
+#servicios .accordion .card .card-header button{
+	padding: 0;
+	margin: 10px auto;
+	border: none;
+	text-align: center;
+}
+#servicios .accordion .card .card-header button:hover{
+	background: #c2c2c2;
+	text-decoration: none;
+}
+#servicios .accordion .card .card-header button p{
+	margin: 0 auto;
+	color: #212529;
+	border: 2px solid #212529;
+	border-radius: 3px;
+	display: block;
+	width: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#servicios .accordion .card .card-header button i{
+	font-size: 20px;
 }
 #servicios .item-servicio article p, #areas .item-area article p{
 	text-align: center;
@@ -200,6 +240,7 @@ header nav .navbar li a{
 
 
 @media screen and (min-width: 770px){
+	
 	#spacer .container{
 		/*background: orange;*/
 		flex-wrap: nowrap;
@@ -208,5 +249,31 @@ header nav .navbar li a{
 		align-self: center;
 		margin-left: 40px;
 		margin-top: 60px;
+	}
+}
+@media screen and (min-width: 992px){
+	header nav .collapseNavbar{
+		display: none;
+	}
+	header nav .largeNavbar{
+		/*display: block;*/
+	}
+	header nav .menu{
+		order: 2;
+		width: 75%;
+		padding: 30px;
+		/*background: red;*/
+	}
+	header nav .menu .navbar{
+		flex-direction: row;
+		margin: 0 auto;
+		/*background: purple;*/
+	}
+	header nav .menu .navbar li{
+		/*background: gray;*/
+		align-self: center;
+	}
+	header nav .button{
+		display: none;
 	}
 }

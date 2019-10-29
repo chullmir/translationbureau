@@ -42,12 +42,36 @@
 					<a href="#hero"><img src="img/logo.png" alt="" width="40px"></a>
 				</div>
 				<div class="button">
-					<button class="btn" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-expanded="false" aria-controls="collapseExample">
+					<button class="btn" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-expanded="false" aria-controls="collapseNavbar">
 						<i class="fas fa-bars"></i>
 					</button>
 				</div>
 
-				<div class="collapse" id="collapseNavbar">
+				<div class="collapse menu" id="collapseNavbar">
+					<ul class="navbar">
+						<li>
+							<a href="#acerca">Acerca</a>
+						</li>
+						<li>
+							<a href="#servicios">Servicios</a>
+						</li>
+						<li>
+							<a href="#areas">Áreas</a>
+						</li>
+						<li>
+							<a href="#">Trabajá con nosotros</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Contacto</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="menu" id="largeNavbar">
 					<ul class="navbar">
 						<li>
 							<a href="#acerca">Acerca</a>
@@ -73,81 +97,9 @@
 
 				
 
-				<!-- <div class="collapse" id="collapseNavbar">
-					<div class="card card-body">
-						
-					</div>
-				</div> -->
-
-
 
 				
-				<div class="collapse" id="collapseExample">
-					<div class="card card-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-					</div>
-				</div>
-
-				
-
-
-
-
-
-				<div class="menu">
-					<div class="navbarCollapse" id="navbarCollapse">
-						<ul class="navbar">
-							<li>
-								<a href="#acerca">Acerca</a>
-							</li>
-							<li>
-								<a href="#servicios">Servicios</a>
-							</li>
-							<li>
-								<a href="#areas">Áreas</a>
-							</li>
-							<li>
-								<a href="#">Trabajá con nosotros</a>
-							</li>
-							<li>
-								<a href="#">Blog</a>
-							</li>
-							<li>
-								<a href="#">Contacto</a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
 			</nav>
-			<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-				<a class="navbar-brand" href="#hero"><img src="img/logo.png" alt="" width="40px"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarMenu">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#acerca">Acerca</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#servicios">Servicios</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#areas">Áreas</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Trabajá con nosotros</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contacto</a>
-						</li>
-					</ul>
-				</div>
-			</nav> -->
 		</div>
 	</header>
 	<!--==========================
@@ -223,56 +175,99 @@
 
 
 
+		
 
 
 
+			<div class="row accordion" id="serviceAccordion">
 
-
-
-
-
-
-			<div class="row">
 				<div class="col-6 col-lg-4 item-servicio">
-					<article>
-						<i class="fas fa-icons"></i>
-						<h4>Traducción</h4>
-						<p>Contamos con un equipo de profesionales especializados en cada campo, por lo que siempre asignaremos al  traductor que mejor se adapte a tus necesidades. Disponemos de las más avanzadas herramientas y plataformas informáticas  y  empleamos estrictos procedimientos de calidad que garantizan una máxima eficacia, rapidez y seguridad en cada proyecto de traducción.</p>
+					<article class="card">	
+						<div class="card-header" id="headingOne">
+							<i class="fa fa-laptop"></i>
+							<h4>Traducción</h4>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<p>+</p>
+							</button>
+						</div>
+						<div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#serviceAccordion">
+							<p>Contamos con un equipo de profesionales especializados en cada campo, por lo que siempre asignaremos al  traductor que mejor se adapte a tus necesidades. Disponemos de las más avanzadas herramientas y plataformas informáticas  y  empleamos estrictos procedimientos de calidad que garantizan una máxima eficacia, rapidez y seguridad en cada proyecto de traducción.</p>
+						</div>
 					</article>
 				</div>
+
 				<div class="col-6 col-lg-4 item-servicio">
-					<article>
-						<i class="fas fa-icons"></i>
-						<h4>Interpretación</h4>
-						<p>Proporcionamos interpretación simultánea, consecutiva, de enlace, de acompañamiento, susurrada y jurada.Contamos con un equipo de intérpretes que podrán asistirte en eventos, congresos multilingües, reuniones, cursos de formación, reuniones bilaterales, viajes, etc.</p>
+					<article class="card">	
+						<div class="card-header" id="headingTwo">
+							<i class="fas fa-headset"></i>
+							<h4>Interpretación</h4>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								<p>+</p>
+							</button>
+						</div>
+						<div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#serviceAccordion">
+							<p>Proporcionamos interpretación simultánea, consecutiva, de enlace, de acompañamiento, susurrada y jurada.Contamos con un equipo de intérpretes que podrán asistirte en eventos, congresos multilingües, reuniones, cursos de formación, reuniones bilaterales, viajes, etc.</p>
+						</div>
 					</article>
 				</div>
+
 				<div class="col-6 col-lg-4 item-servicio">
-					<article>
-						<i class="fas fa-icons"></i>
-						<h4>Subtitulado</h4>
-						<p>Este servicio es muy útil si tu interés es hacer llegar un vídeo a un público con el que necesitas interactuar en otro idioma. Asignaremos el proyecto a un traductor especializado en este campo, ya que además de contar con los requisitos propios de un profesional en la traducción, tiene que seguir una serie de criterios específicos.</p>
+					<article class="card">	
+						<div class="card-header" id="headingThree">
+							<i class="fas fa-film"></i>
+							<h4>Subtitulado</h4>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+								<p>+</p>
+							</button>
+						</div>
+						<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#serviceAccordion">
+							<p>Este servicio es muy útil si tu interés es hacer llegar un vídeo a un público con el que necesitas interactuar en otro idioma. Asignaremos el proyecto a un traductor especializado en este campo, ya que además de contar con los requisitos propios de un profesional en la traducción, tiene que seguir una serie de criterios específicos.</p>
+						</div>
 					</article>
 				</div>
+
 				<div class="col-6 col-lg-4 item-servicio">
-					<article>
-						<i class="fas fa-icons"></i>
-						<h4>Edición y corrección</h4>
-						<p>En Translation Bureau te  ayudamos a que tus textos estén libres de errores, y para ello empleamos la corrección ortográfica y de estilo. La primera engloba tanto la rectificación de errores ortográficos y gramaticales, atendiendo siempre a las normas de la Real Academia Española; la última se realiza con el fin de asegurar la coherencia y cohesión del texto y de eliminar todo tipo de elementos confusos que empañen el texto y su correcta comprensión.</p>
+					<article class="card">	
+						<div class="card-header" id="headingFour">
+							<i class="fas fa-user-edit"></i>
+							<h4>Edición y corrección</h4>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+								<p>+</p>
+							</button>
+						</div>
+						<div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#serviceAccordion">
+							<p>En Translation Bureau te  ayudamos a que tus textos estén libres de errores, y para ello empleamos la corrección ortográfica y de estilo. La primera engloba tanto la rectificación de errores ortográficos y gramaticales, atendiendo siempre a las normas de la Real Academia Española; la última se realiza con el fin de asegurar la coherencia y cohesión del texto y de eliminar todo tipo de elementos confusos que empañen el texto y su correcta comprensión.</p>
+						</div>
 					</article>
 				</div>
+
 				<div class="col-6 col-lg-4 item-servicio">
-					<article>
-						<i class="fas fa-icons"></i>
-						<h4>Formato y diseño</h4>
-						<p>Si necesitás que la traducción conserve el mismo formato que el texto original, contamos con maquetadores y diseñadores gráficos que se encargarán de que el documento traducido se vea tal cual lo desees.</p>
+					<article class="card">	
+						<div class="card-header" id="headingFive">
+							<i class="fas fa-object-group"></i>
+							<h4>Formato y diseño</h4>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+								<p>+</p>
+							</button>
+						</div>
+						<div class="collapse" id="collapseFive" aria-labelledby="headingFive" data-parent="#serviceAccordion">
+							<p>Si necesitás que la traducción conserve el mismo formato que el texto original, contamos con maquetadores y diseñadores gráficos que se encargarán de que el documento traducido se vea tal cual lo desees.</p>
+						</div>
 					</article>
 				</div>
+
 				<div class="col-6 col-lg-4 item-servicio">
-					<article>
-						<i class="fas fa-icons"></i>
-						<h4>Legalización</h4>
-						<p>Nuestra experiencia, calidad y rapidez nos permiten brindar un servicio integral que abarca desde una simple traducción hasta la obtención de la firma certificada del Colegio de Traductores Públicos para los documentos legales que así lo requieren.</p>
+					<article class="card">	
+						<div class="card-header" id="headingSix">
+							<i class="fas fa-stamp"></i>
+							<h4>Legalización</h4>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+								<p>+</p>
+							</button>
+						</div>
+						<div class="collapse" id="collapseSix" aria-labelledby="headingSix" data-parent="#serviceAccordion">
+							<p>Nuestra experiencia, calidad y rapidez nos permiten brindar un servicio integral que abarca desde una simple traducción hasta la obtención de la firma certificada del Colegio de Traductores Públicos para los documentos legales que así lo requieren.</p>
+						</div>
 					</article>
 				</div>
 
