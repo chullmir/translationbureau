@@ -161,10 +161,10 @@ header nav .navbar li a{
 #servicios .item-servicio, #areas .item-area{
 	margin-bottom: 25px;
 }
-#servicios .accordion .card{
+#servicios .accordion .card, #areas .accordion .card{
 	border: none;
 }
-#servicios .accordion .card .card-header{
+#servicios .accordion .card .card-header, #areas .accordion .card .card-header{
 	background: none;
 	width: 100%;
 	border: none;
@@ -184,19 +184,19 @@ header nav .navbar li a{
 	border-radius: 0px;
 
 }
-#servicios .item-servicio article i{
+#servicios .item-servicio article i, #areas .item-area article i{
 	font-size: 5em;
 	margin: 20px auto 35px;
 	color: #666666;
 }
-#servicios .item-servicio article h4, #areas .item-servicio article h4{
+#servicios .item-servicio article h4, #areas .item-area article h4{
 	margin-top: 35px;
 	margin-bottom: 0px;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	text-decoration: none;
 }
-#servicios .accordion .card .card-header button{
+#servicios .accordion .card .card-header button, #areas .accordion .card .card-header button{
 	border-radius: 0px;
 	padding: 0;
 	background: #9bbffa;
@@ -207,11 +207,11 @@ header nav .navbar li a{
 	border: none;
 	text-align: center;
 }
-#servicios .accordion .card .card-header button:hover{
+#servicios .accordion .card .card-header button:hover, #areas .accordion .card .card-header button:hover{
 	background: #c2c2c2;
 	text-decoration: none;
 }
-#servicios .accordion .card .card-header button i{
+#servicios .accordion .card .card-header button i, #areas .accordion .card .card-header button i{
 	font-size: 20px;
 	margin: 15px;
 }
@@ -222,6 +222,7 @@ header nav .navbar li a{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
+
 #contacto .container .datos{
 	display: flex;
 	flex-direction: column;
