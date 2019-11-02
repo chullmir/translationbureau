@@ -166,6 +166,7 @@ header nav .navbar li a{
 }
 #servicios .accordion .card .card-header{
 	background: none;
+	width: 100%;
 	border: none;
 	display: flex;
 	flex-direction: column;
@@ -175,29 +176,34 @@ header nav .navbar li a{
 
 #servicios .item-servicio article, #areas .item-area article{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	background: #F9F9F9;
-	padding: 40px 25px;
+	padding: 40px auto;
+	border-radius: 0px;
 
 }
 #servicios .item-servicio article i{
 	font-size: 5em;
-	margin: 35px auto;
+	margin: 20px auto 35px;
 	color: #666666;
 }
 #servicios .item-servicio article h4, #areas .item-servicio article h4{
-	/*margin-bottom: 35px;*/
+	margin-top: 35px;
+	margin-bottom: 0px;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	color: #212529;
-	margin: 0;
 	text-decoration: none;
 }
 #servicios .accordion .card .card-header button{
+	border-radius: 0px;
 	padding: 0;
-	margin: 10px auto;
+	background: #9bbffa;
+	/*padding: 15px;*/
+	width: 100%;
+	/*margin: 10px auto;*/
+	/*width: 100%;*/
 	border: none;
 	text-align: center;
 }
@@ -205,22 +211,14 @@ header nav .navbar li a{
 	background: #c2c2c2;
 	text-decoration: none;
 }
-#servicios .accordion .card .card-header button p{
-	margin: 0 auto;
-	color: #212529;
-	border: 2px solid #212529;
-	border-radius: 3px;
-	display: block;
-	width: 30px;
-	font-size: 20px;
-	font-weight: bold;
-}
 #servicios .accordion .card .card-header button i{
 	font-size: 20px;
+	margin: 15px;
 }
 #servicios .item-servicio article p, #areas .item-area article p{
 	text-align: center;
 	color: #666;
+	margin: 20px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
@@ -255,8 +253,8 @@ header nav .navbar li a{
 	header nav .collapseNavbar{
 		display: none;
 	}
-	header nav .largeNavbar{
-		/*display: block;*/
+	header nav #largeNavbar{
+		display: block;
 	}
 	header nav .menu{
 		order: 2;
