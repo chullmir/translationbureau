@@ -126,16 +126,22 @@ header nav .navbar li a{
 	margin-bottom: 30px;
 }
 #acerca{
-	background: purple;
+	padding: 10px;
 }
-
-#servicios .header, #areas .header{
+#acerca .acerca-text{
+	/*margin-bottom: 30px;*/
+}
+#acerca p{
+	font-family: 'Lato';
+	text-align: center;	
+}
+.header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 60px;
 }
-#servicios .sectionTitle, #areas .sectionTitle{
+.sectionTitle{
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: -1px;
 	text-transform: uppercase;
@@ -146,7 +152,7 @@ header nav .navbar li a{
 	margin-top: 45px;
 
 }
-#servicios .header .divider-header, #areas .header .divider-header{
+.header .divider-header{
 	width: 40px;
 	height: 2px;
 	margin: 0 auto;
@@ -222,20 +228,66 @@ header nav .navbar li a{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
-
 #contacto .container .datos{
 	display: flex;
 	flex-direction: column;
-	padding: 30px;
+	padding: 50px;
 }
 #contacto .container .datos article{
 	display: flex;
+	align-items: center;
+}
+#contacto .container .datos article .text i{
+	margin-right: 15px;
 }
 #contacto .container .datos article .text{
 	text-transform: uppercase;
 	margin-right: 15px;
 	width: 30%;
+	font-size: 1em;
 }
+#contacto .container .datos article .dato{
+	font-size: 0.8em;
+	color: #888888;	
+}
+#contacto .container .datos .redes-sociales{
+	display: flex;
+	padding: 15px;
+	justify-content: center;
+	align-items: center;
+}
+#contacto .container .datos .redes-sociales .fab{
+	background: black;
+	margin-right: 15px;
+	color: white;
+	padding: 15px;
+	border-radius: 50%;
+	font-size: 2em;
+}
+#contacto .container .datos .redes-sociales .fa-whatsapp:hover{
+	background: #128c7e;
+	cursor: pointer;
+}
+#contacto .container .datos .redes-sociales .fa-instagram:hover{
+	background: #c13584;
+	color: #fcaf45;
+	cursor: pointer;
+}
+#contacto .container .datos .redes-sociales .fa-twitter:hover{
+	background: #2bc4ff;
+	cursor: pointer;
+}
+#contacto .container .formulario input[type="text"], #contacto .container .formulario textarea{
+	margin-top: 15px;
+	padding: 20px;
+	font-size: 0.8em;
+}
+#contacto .container .formulario .btn{
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+
 
 
 @media screen and (min-width: 770px){
